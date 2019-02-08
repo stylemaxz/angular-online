@@ -1,3 +1,4 @@
+import { Title } from '@angular/platform-browser';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -22,8 +23,9 @@ export class AboutComponent implements OnInit {
   myColor = 'yellow';
   isActive = false;
 
-  constructor() {
+  constructor(private titleBar: Title) {
     this.age = 10;
+    this.titleBar.setTitle('About me Maxz');
   }
 
   ngOnInit() {
