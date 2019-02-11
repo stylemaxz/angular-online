@@ -1,3 +1,4 @@
+import { NewsComponent } from './news/news.component';
 import { ProductDetailComponent } from './products/product-detail/product-detail.component';
 import { ProductsComponent } from './products/products.component';
 import { HomeComponent } from './home/home.component';
@@ -9,7 +10,8 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent},
   { path: 'product', component: ProductsComponent},
-  { path: 'product/:id/:title', component: ProductDetailComponent}
+  { path: 'product/:id/:title', component: ProductDetailComponent},
+  { path: 'news', component: NewsComponent}
 ];
 
 @NgModule({
