@@ -1,3 +1,4 @@
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { NewsComponent } from './news/news.component';
 import { ProductDetailComponent } from './products/product-detail/product-detail.component';
 import { ProductsComponent } from './products/products.component';
@@ -11,11 +12,12 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent},
   { path: 'product', component: ProductsComponent},
   { path: 'product/:id/:title', component: ProductDetailComponent},
-  { path: 'news', component: NewsComponent}
+  { path: 'news', component: NewsComponent},
+  { path: '**', component: PagenotfoundComponent}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

@@ -11,6 +11,7 @@ import { AboutComponent } from './about/about.component';
 import { ProductsComponent } from './products/products.component';
 import { ProductDetailComponent } from './products/product-detail/product-detail.component';
 import { NewsComponent } from './news/news.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NewsComponent } from './news/news.component';
     AboutComponent,
     ProductsComponent,
     ProductDetailComponent,
-    NewsComponent
+    NewsComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,
