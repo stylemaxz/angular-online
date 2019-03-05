@@ -12,6 +12,7 @@ import { ProductsComponent } from './products/products.component';
 import { ProductDetailComponent } from './products/product-detail/product-detail.component';
 import { NewsComponent } from './news/news.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { AdtobePipe } from './adtobe.pipe';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     ProductsComponent,
     ProductDetailComponent,
     NewsComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    AdtobePipe
   ],
   imports: [
     BrowserModule,
